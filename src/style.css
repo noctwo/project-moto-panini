@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #393939;
+  color: #fff;
+}
+
+header{
+  text-align: center;
+  margin-top: 3em;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+#moto-form{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  width: 600px;
+  margin: 0px auto;
+}
+
+input{
+  padding: 1em 2em;
+  border-radius: 15px;
+  margin-bottom: 1.5em;
+  border: none;
+}
+
+input[type="submit"]{
+  background-color: lightsalmon;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.grid-wrapper{
+  width: 90vw;
+  margin: 3em auto;
+  display:grid;
+  grid-template-columns: repeat(4/*auto-fit*/, minmax(200px, 1fr));
+  grid-template-rows: 300px 1fr;
+  gap: 1em;
+  grid-auto-rows: 200px;
+
+}
+
+.card{
+  background-color: lightgreen;
+  border-radius: 15px;
+  padding: 1em;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delete-button{
+  background-color: #fff;
+  color: #393939;
+  padding: 1em 3em;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self:stretch;
+  border-style: none;
+}
+
+.delete-button:hover{
+  background-color: orangered;
+  color: #fff;
+  cursor: pointer;
+}
