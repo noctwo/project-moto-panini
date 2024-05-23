@@ -85,6 +85,13 @@ function createNewMotorcycle(){
   urlDiv.classList.add("url-div")
   urlDiv.innerHTML = newMotorcycle.url
 
+  let editBtn = document.createElement("button");
+  editBtn.classList.add("edit-button")
+  editBtn.innerHTML = "Edit";
+  editBtn.addEventListener("click", () => {
+    
+  })
+
   let deleteBtn = document.createElement("button");
   deleteBtn.classList.add("delete-button")
   deleteBtn.innerHTML = "Delete";
@@ -105,6 +112,7 @@ function createNewMotorcycle(){
   cardDiv.appendChild(engineVolumeDiv);
   cardDiv.appendChild(horsePowerDiv);
   cardDiv.appendChild(dryWeightDiv);
+  cardDiv.appendChild(editBtn);
   cardDiv.appendChild(deleteBtn);
 
   //?fertige card ausgeben
