@@ -98,7 +98,6 @@ input[type="submit"]:hover{
 
 .manufacturer-div{
   font-size: 4rem;
-  font-weight: ;
 }
 
 .model-div{
@@ -136,4 +135,9 @@ input[type="submit"]:hover{
 
 .dry-weight-div::before{
   content: "Dry Weight Kg: ";
+}
+
+#save-btn{
+  padding: 1em 2em;
+  border-radius: 15px;
 }
