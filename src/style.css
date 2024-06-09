@@ -24,7 +24,7 @@ h1{
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
-  width: 600px;
+  width: 625px;
   margin: 0px auto;
 }
 
@@ -38,6 +38,14 @@ input{
 input[type="submit"]{
   background-color: lightsalmon;
   cursor: pointer;
+  color: #393939;
+  padding: 1em 3em;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self:stretch;
+  border-style: none;
+  margin-top: 1em;
 }
 
 input[type="submit"]:hover{
@@ -137,7 +145,37 @@ input[type="submit"]:hover{
   content: "Dry Weight Kg: ";
 }
 
-#save-btn{
-  padding: 1em 2em;
+#save-btn, #park-btn, #load-btn{
+  
+  background-color: lightgreen;
+  color: #393939;
+  height: 45px;
+  padding: 0em 3em;
   border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self:stretch;
+  border-style: none;
+  margin-top: 1em;
+  margin: 0 auto;
+}
+
+#save-btn:hover{
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+.garage-btn-wrapper{
+  width: 625px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#park-btn, #load-btn{
+  background-color: lightblue;
+}
+
+#park-btn:hover, #load-btn:hover{
+  background-color: cornflowerblue;
+  cursor: pointer;
 }

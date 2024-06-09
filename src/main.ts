@@ -12,8 +12,10 @@ let horsepowerInput = document.getElementById("horsepower-input")as HTMLInputEle
 let dryWeightInput = document.getElementById("dry-weight-input")as HTMLInputElement;
 let urlInput = document.getElementById("url-input") as HTMLInputElement;
 
-let submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
 let saveBtn = document.getElementById("save-btn") as HTMLButtonElement;
+
+const loadGarageButton = document.getElementById("load-btn");
+const parkInGarageButton = document.getElementById("park-btn");
 
 let editIndex: number | null = null;
 
@@ -33,6 +35,22 @@ saveBtn.addEventListener("click", (event: Event) => {
     updateMotorcycleInEditForm(editIndex);
   }
 });
+
+loadGarageButton?.addEventListener("click", () => {
+  const MotorcyclesFromLocalStorage = localStorage.getItem("Motorcycles");
+  Motorcycles = JSON.parse(MotorcyclesFromLocalStorage);
+  renderSavedMotorcycles();
+});
+
+parkInGarageButton?.addEventListener("click", () => {
+  localStorage.setItem("Motorcycles", JSON.stringify(Motorcycles));
+});
+
+function renderSavedMotorcycles(){
+  Motorcycles.forEach(motorcycle => {
+    createMotorcycleCardsAndAddMotrcycleToCard(motorcycle, Motorcycles.length - 1);
+  });
+}
 
 type Motorcycle = {
   manufacturer: string,
@@ -155,7 +173,6 @@ function loadMotorcycleIntoEditForm(index:number){
   urlInput.value = motorcycle.url;
 
   editIndex = index;
-  submitBtn.style.display = "none";
   saveBtn.style.display = "block";
 }
 
@@ -190,7 +207,6 @@ function updateMotorcycleInEditForm(index:number){
 
   motoForm.reset();
   editIndex = null;
-  submitBtn.style.display = "block";
   saveBtn.style.display = "none";
 
 };
