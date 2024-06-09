@@ -37,7 +37,7 @@ saveBtn.addEventListener("click", (event: Event) => {
 });
 
 loadGarageButton?.addEventListener("click", () => {
-  const MotorcyclesFromLocalStorage = localStorage.getItem("Motorcycles");
+  const MotorcyclesFromLocalStorage:any = localStorage.getItem("Motorcycles");
   Motorcycles = JSON.parse(MotorcyclesFromLocalStorage);
   renderSavedMotorcycles();
 });
