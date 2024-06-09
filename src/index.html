@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Moto-Panini</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Moto Panini</h1>
+        <p class="subheading">Curate your own private Motorcycle Collection</p>
+      </header>
+      <section class="output">
+        <div class="grid-wrapper">
+          <!-- card divs here -->
+        </div>
+      </section>
+      <section class="input">
+        <form id="moto-form">
+          <input id="manufacturer-input" type="text" placeholder="Manufacturer">
+          <input id="model-input" type="model-input" type="text" placeholder="Model">
+          <input id="type-input" type="text" placeholder="Bike-Type e.g. 'Tourer'">
+          <input id="engine-type-input" type="text" placeholder="Engine Type e.g. 'Inline 4'">
+          <input id="eingine-volume-input" type="number" placeholder="Eingine Volume in ccm">
+          <input id="horsepower-input" type="number" placeholder="Horsepower">
+          <input id="dry-weight-input" type="number" placeholder="Dry Weight in Kg">
+          <input id="url-input" type="url" placeholder="Photo">
+          <input type="submit" value="Add to my Collection">
+        </form>
+        <button id="save-btn" type="button" style="display: none;">Save Changes</button>
+        <div class="garage-btn-wrapper">
+        <button id="park-btn" type="button">Park Bikes in my Garage</button>
+        <button id="load-btn" type="button">Load my Garage</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>
