@@ -11,6 +11,12 @@ Motorcycle Garage Manager is a simple web application that allows users to creat
 - Delete motorcycles from the collection.
 - Save and load the motorcycle collection using local storage.
 
+## Images
+
+- Images must be added as complete URL.
+- To get the complete URL, images may need to be loaded as a new Tab in your Browser.
+- Full Image URL should look like something this if your are using Unsplash: "https://images.unsplash.com/photo-1698695276280-35560ec38525?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
 ## Technologies Used
 
 - TypeScript
