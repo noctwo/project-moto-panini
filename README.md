@@ -19,9 +19,9 @@ Motorcycle Garage Manager is a simple web application that allows users to creat
 
 ## Screenshots
 
-![Example screenshot](./project-moto-panini/src/img/moto-panini-screen.png)
+![Example screenshot](/src/img/moto-panini-screen.png)
 
-![Link to Project](https://noctwo.github.io/project-moto-panini/)
+[Project Link](https://noctwo.github.io/project-moto-panini/)
 
 
 ## Usage
